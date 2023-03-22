@@ -24,9 +24,12 @@ public class Person {
     public Person(String name, char sex, int yearOfBirt) {
         this.name = name;
         this.sex = sex;
-        this.yearOfBirt=yearOfBirt;
+        this.yearOfBirt = yearOfBirt;
         //this.age = age;
 
+    }
+    public String getFullInfo(){
+        return "name:" +" "+ name +" "+ getAge()+" " + getSex();
     }
     public String getName(){
         if (sex == 'F'){
